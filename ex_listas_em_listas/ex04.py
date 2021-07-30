@@ -24,7 +24,7 @@ while nome != 'fim':
     lista_dados.append(n1)
     lista_dados.append(n2)
 
-    #Inputando dados em lisa banco de dados
+    #Inputando lista em lista banco de dados
     banco_de_dados.append(lista_dados)
 
     #Esvaziando lisa de dados dos alunos, afim de receber outra lista
@@ -35,8 +35,21 @@ while nome != 'fim':
 #Exibindo a lista dados de outro jeito
 for alunos in (banco_de_dados):
     print('----------------------------------------')
-    print('Nome: ', alunos[0])
+    print('Nome: ',   alunos[0])
     print('E-mail: ', alunos[1])
     print('Nota-1: ', alunos[2])
     print('Nota-2: ', alunos[3])
-  
+
+#Econtrando um aluno na lista
+achou = 'Não'
+
+procuraAluno = input('Digite o nome de um aluno: ')
+
+for aluno in (banco_de_dados):
+    if procuraAluno == aluno[0]:
+        print('Aluno encontrado')
+        print(aluno)
+        achou = 'sim'
+    
+if achou == 'não':
+    print('Aluno não encontrado')
