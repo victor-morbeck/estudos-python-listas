@@ -53,3 +53,4 @@ for aluno in (banco_de_dados):
     
 if achou == 'não':
     print('Aluno não encontrado')
+    
