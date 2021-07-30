@@ -32,5 +32,6 @@ while nome != 'fim':
 
     nome = input('Digite seu nome: ')
 
-#Exibindo a lista dados
-print(banco_de_dados)
+#Exibindo a lista dados de outro jeito
+for itens in range(0, len(banco_de_dados)):
+    print(itens)
